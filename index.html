@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META content="no-cache" http-equiv="pragma">
+<META content="no-cache" http-equiv="cache-control">
+<META content="0" http-equiv="expires">
+<title>滚动定位楼层</title>
+<style>
+	ul,li{list-style: none;margin:0;padding: 0;}
+	a{text-decoration: none;color: #fff;}
+	.building{
+		position: fixed;
+		right: 70px;
+		top: 50%;
+		background: #ccc;
+		border-radius: 5px;
+		line-height: 25px;
+	}
+	.building li:first-child{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	.building li:last-child{
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	.building li{
+		padding:10px 25px;
+		margin: 1px 0 0 0;
+	}
+	.building li.active,.building li:hover{
+		background: #134B92;
+	}
+	section {
+		/*text-align: center;*/
+		width: 990px;
+		margin: 0 auto;
+	}
+	section ul{
+		margin: 0 auto;
+		width: 990px;
+	}
+	section ul li{
+		display:inline;
+		margin:0 0 0 30px;
+	}
+	section ul li img{
+		margin: 10px 0 0 0;
+		width:300px;
+		height: 250px;
+		border: 1px solid #ccc;
+	}
+	section ul li:nth-child(3n+1){
+		margin-left: 0;
+	}
+</style>
+<script src="anchor.js"></script>
+</head>
+<body>
+<ul class="building">
+	<li class="active"><a href="#a">一楼</a></li>
+	<li><a href="#b">二楼</a></li>
+	<li><a href="#c">三楼</a></li>
+	<li><a href="#d">四楼</a></li>
+	<li><a href="#e">五楼</a></li>
+	<li><a href="#f">六楼</a></li>
+	<li><a href="#g">七楼</a></li>
+</ul>
+
+<section id="a">
+<h3>一楼</h3>
+<ul>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+</ul>
+</section>
+
+<section id="b">
+<h3>二楼</h3>
+<ul>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+</ul>
+</section>
+
+
+<section id="c">
+<h3>三楼</h3>
+<ul>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+</ul>
+</section>
+<section id="d">
+<h3>四楼</h3>
+<ul>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+</ul>
+</section>
+
+
+<section id="e">
+<h3>五楼</h3>
+<ul>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+</ul>
+</section>
+<section id="f">
+<h3>六楼</h3>
+<ul>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+	<li><img src="test1.png"/></li>
+</ul>
+</section>
+
+
+<section id="g">
+<h3>七楼</h3>
+<ul>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+	<li><img src="test.jpg"/></li>
+</ul>
+</section>
+
+<!-- 
+<section>
+<h2>默认倒计时：</h2>
+	<div id="countdown" class="countdown">
+		
+	</div>
+	<h6>代码格式：</h6>
+	<pre>
+		new CountDown();
+	</pre>
+	<script>
+		new CountDown();
+	</script>
+</section>
+<section>
+<h2>自定义模版倒计时：</h2>
+	<div id="countdown2" class="countdown">
+		
+	</div>
+	<h6>代码格式：</h6>
+	<pre>
+		new CountDown({"template":'<span class="label">自定义倒计时模版：</span><span class="number" id="countdown_hour_{{id}}">{{hour}}</span>小时<span class="number" id="countdown_minutes_{{id}}">{{minutes}}</span>分<span class="number" id="countdown_seconds_{{id}}">{{seconds}}</span>秒'});
+		注意：日，时，分，秒的容器ID前缀和数据填充部分“{{xxx}}”不能修改！其它可以任意定义
+		{{id}}代表日，时，分，秒的容器ID后缀  由当前倒计时实例的时间戳生成
+		{{day}}:代表天
+		{{hour}}:代表时
+		{{minutes}}:代表分
+		{{seconds}}:代表秒
+	</pre>
+	<script>
+		new CountDown({"id":"countdown1","template":'<span class="label">自定义倒计时模版：</span><span class="number" id="countdown_hour_{{id}}">{{hour}}</span>小时<span class="number" id="countdown_minutes_{{id}}">{{minutes}}</span>分<span class="number" id="countdown_seconds_{{id}}">{{seconds}}</span>秒'});
+	</script>
+</section>	
+
+<section>
+<h2>传入系统时间倒计时：</h2>
+	<div id="countdown2" class="countdown">
+		
+	</div>
+	<h6>代码格式：</h6>
+	<pre>
+		var today=new Date().getTime();
+		new CountDown({"id":"countdown2","currTime":today,"beginTime":today+3*24*60*60*1000});
+		currTime:代表系统的当前时间    单位为毫秒
+		beginTime:代表系统传回的倒计时开始时间  单位为毫秒		
+	</pre>
+	<script>
+		var today=new Date().getTime();
+		new CountDown({"id":"countdown2","currTime":today,"beginTime":today+3*24*60*60*1000});
+	</script>
+</section>	
+
+
+<section>
+<h2>有传入回调的倒计时：</h2>
+	<div id="countdown3" class="countdown">
+		
+	</div>
+	<h6>代码格式：</h6>
+	<pre>
+		var today=new Date().getTime();
+		new CountDown({"id":"countdown3","currTime":today,"beginTime":today+10*1000,callback:function(){
+			alert("倒计时已经完成！");
+		}});
+		callback:可传入任何你需要在页面上处理的操作！
+	</pre>
+	<script>
+		var today=new Date().getTime();
+		new CountDown({"id":"countdown3","currTime":today,"beginTime":today+10*1000,callback:function(){
+			alert("倒计时已经完成！");
+		}});
+	</script>
+</section>-->
+</body>
+</html>
